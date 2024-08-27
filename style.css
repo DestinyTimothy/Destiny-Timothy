@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #383737;
+
+}
+
+.header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #484749;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+}
+
+#tim {
+    color: white;
+}
+
+.header .name-logo a{
+    font-size: 40px;
+    color: white;
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    color: #0051ff;
+    display: inline-block;
+    border-right: 4px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(10),
+        cursor .4s step-end infinite alternate
+    ;
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header .links ul{
+    display: flex;
+    position: relative;
+}
+
+.header .links ul li a{
+    margin: 0px 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.header .links ul li #more-abt-me {
+    background-color: #00ff9d;
+    color: #484749;
+    padding: 7px 10px;
+    border-radius: 17px;
+}
+
+.header .links ul li #skills {
+    background-color: #ff4500;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 17px;
+}
+
+.header .links ul li #lets-work {
+    background-color: #ffa500;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 17px;
+}
+
+.header .links ul li #l1 {
+    display: none;
+}
+.header .links ul li a:hover #l1{
+    display: inline;
+}
+.header .links ul li #l2 {
+    display: none;
+}.header .links ul li a:hover #l2{
+    display: inline;
+}.header .links ul li #l3 {
+    display: none;
+}.header .links ul li a:hover #l3{
+    display: inline;
+}
+
+
+
+.main {
+    height: 90vh;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/code.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.main img {
+    width: 280px;
+}
+
+.main center h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #0051ff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.wrapper span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+    color: #429ef5;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    animation: animate 5s infinite 0s;
+}
+
+.wrapper span:nth-child(2){
+    animation-delay: 1.4s;
+}
+.wrapper span:nth-child(3){
+    animation-delay: 2.4s;
+}
+.wrapper span:nth-child(4){
+    animation-delay: 3.4s;
+}
+.wrapper span:nth-child(5){
+    animation-delay: 4.4s;
+}
+
+@keyframes animate {
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+#intro-text {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+#skills h1 {
+    padding: 70px 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+#skls {color: #429ef5;}
+
+
+
+.the-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-card {
+    background-color: #534f4e;
+    border-radius: 30px;
+    padding: 20px 24px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-card h1{
+    font-family: "Courier Prime", monospace;
+    color: #a2cbf1;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.skill-card h2{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 23px;
+    font-weight:600;
+    margin-top: 10px;
+}
+
+.skill-card svg{
+    position: relative;
+    width: 200px;
+}
+
+.skill-card svg circle{
+    position: relative;
+    width: 200px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #0051ff;
+    transform: translate(27px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.skill-card .percent1 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+.skill-card .percent1 svg circle:nth-child(2){
+    stroke-dashoffset: 44;
+    stroke: #0051ff;
+}
+
+
+.skill-card .percent2 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+.skill-card .percent2 svg circle:nth-child(2){
+    stroke-dashoffset: 220;
+    stroke: #0051ff;
+}
+
+
+.skill-card .percent3 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+.skill-card .percent3 svg circle:nth-child(2){
+    stroke-dashoffset: 100;
+    stroke: #0051ff;
+}
+
+
+.skill-card .percent4 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+
+.skill-card .percent4 svg circle:nth-child(2){
+    stroke-dashoffset: 180;
+    stroke: #0051ff;
+}
+
+
+.skill-card .percent5 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+
+.skill-card .percent5 svg circle:nth-child(2){
+    stroke-dashoffset: 320;
+    stroke: #0051ff;
+}
+
+.skill-card .percent6 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+
+.skill-card .percent6 svg circle:nth-child(2){
+    stroke-dashoffset: 320;
+    stroke: #0051ff;
+}
+
+.skill-card .percent7 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #666666;
+}
+
+.skill-card .percent7 svg circle:nth-child(2){
+    stroke-dashoffset: 320;
+    stroke: #0051ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    
+    .header {
+        height: 70px;
+        padding: 0 20px;
+    }
+    
+    .header .name-logo a{
+        font-size: 4vw;
+    }
+    
+    .main img {
+        border-radius: 7vw;
+    }
+    
+    .main center h1 {
+        font-weight: 700;
+        font-size: 6vw;
+    }    
+
+    #skills h1 {
+        font-size: 6vw;
+    }
+
+    .main center h4 {
+        font-weight: 500;
+        font-size: 4vw;
+    }
+    
+    .wrapper span {
+        font-size: ;
+    }
+    
+    #intro-text {
+        margin-top:40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header .links ul li a{
+        font-size: 2.4vw;
+    }
+    .header {
+        height: 64px;
+        padding: 0 20px;
+    }
+    
+    .header .name-logo a{
+        font-size: 6vw;
+    }
+    
+    .main img {
+        width: 60vw;
+        border-radius: 7vw;
+    }
+    
+    .main center h1 {
+        font-weight: 700;
+        font-size: 9vw;
+    }    
+    
+    .wrapper span {
+        font-size: 6vw;
+    }
+
+    #skills h1 {
+        font-size: 9vw;
+    }
+    
+    .the-skills {
+        display: block;
+        justify-content: space-between;
+        border-radius: 30px;
+        margin: 0 12vw;
+    }
+    
+    .skill-card {
+        margin-bottom: 50px;
+        padding: 30px 0px;
+    }
+
+    .main center h4 {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 6vw;
+    }
+    
+    #intro-text {
+        margin-top:40px;
+    }
+}
