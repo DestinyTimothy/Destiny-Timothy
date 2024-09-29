@@ -1,142 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Destiny Timothy</title>
-</head>
-<body>
-    <section class="header">
-        <div class="name-logo">
-            <a href="index.html"><span id="tim" data-text="Tim.">Tim.</span>dextr_</a>
-        </div>
-        <div class="links">
-            <ul>
-                <li><a href="/" id="more-abt-me"><i class="fa-solid fa-user"></i><span id="l1"> about me</span></a></li>
-                <li><a href="#skillso" id="skills"><i class="fa-solid fa-gear"></i><span id="l2"> skills</span></a></li>
-                <li><a href="#" id="lets-work"><i class="fa-solid fa-pen-to-square"></i><span id="l3"> lets work</span></a></li>
-            </ul>
-        </div>
-    </section>
-    <section class="main">
-        <center>
-            <img src="images/me.png" alt="Destiny Timothy">
-            <div id="intro-text">
-                <h1 data-text="Hi, I'm Destiny Timothy">Hi, I'm  Destiny Timothy</h1>
-                <div class="wrapper">
-                    <span>a web developer</span>
-                    <span>a graphic designer</span>
-                    <span>a freelancer</span>
-                    <span>a tech enthusiast :<i>)</i></span>
-                </div>
-            </div>
-        </center>
-    </section>
+	<title>Destiny Timothy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <section id="skillso">
-        <section id="skills">
-            <center><h1>some of my<br> <span id="skls">skills</span></h1></center>
-        </section>
-    
-        <section class="the-skills">
-            <div class="skill-card">
-                <h1>< HTML /></h1>
-                <div class="percent1">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>99<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Mastered</h2>
-            </div>
-    
-            <div class="skill-card">
-                <h1>:CSS;</h1>
-                <div class="percent3">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>85<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Advanced</h2>
-            </div>
-    
-            <div class="skill-card">
-                <h1>.Bootstrap</h1>
-                <div class="percent4">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>65<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Intermidiate</h2>
-            </div>
-    
-            <div class="skill-card">
-                <h1>{Java Script}</h1>
-                <div class="percent2">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>55<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Intermidiate</h2>
-            </div>
-    
-            <div class="skill-card">
-                <h1>.Tail wind</h1>
-                <div class="percent5">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>30<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Learning</h2>
-            </div>
-            <div class="skill-card">
-                <h1>React JS</h1>
-                <div class="percent6">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>30<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Learning</h2>
-            </div>
-            <div class="skill-card">
-                <h1>Vue JS</h1>
-                <div class="percent7">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>30<span>%</span></h2>
-                    </div>
-                </div>
-                <h2>Learning</h2>
-            </div>
-        </section>
-    </section>
-</body>
-</html>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<section class="site-hero" style="background-image: url(images/protfolio-bg.png);" id="section-home" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center">
+				<div class="col-md-10 text-center pt-5">
+
+					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Destiny Timothy</strong></h1>
+					<strong class="d-block text-white text-uppercase letter-spacing"> DEVELOPER | DESIGNER | CREATIVE</strong>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- section -->
+
+
+
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Education</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> September 2016 - August 2022</span>
+						<h3>High-School Degree (SSC).</h3>
+						<p>I spent 6 years in Kind David College, Port-Harcourt, Nigeria. From Grade 7 (JSS1) to Grade 12 (SSS3)</p>
+						<span class="school">King David College</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> January 2023 - December 2026 (Ongoing)</span>
+						<h3>BSc in Compuer Science.</h3>
+						<p>I'm Currently a Student in Rivers State University studying Computer Science</p>
+						<span class="school">Rivers State University of Science and Technology</span>
+					</div>
+				</div>
+				<div class="col-md-6">
+
+
+					<h2 class="mb-5">Experience</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> June 2024 - Present</span>
+						<h3>Founder and CEO at Dexterity</h3>
+						<p>I currently work at Dexterity with my team, Where we work on Projects and Products, Shaping the next Generation of Creatives.</p>
+						<span class="school"><a href="https://bit.ly/DEXTR">Dexterity</a></span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> July 2021 - Present</span>
+						<h3>Freelancing</h3>
+						<p>With over 3 years of freelancing experience, I've succesfully met the unique needs of diverse clients.</p>
+						<span class="school">Fiverr, Upwork, Referrals</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- .section -->
+
+
+	<section class="site-section pb-0"  id="section-services">
+		<div class="container">
+
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>My <strong>Services</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-lg-6 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-browser2"></span>
+						</span>
+						<h3 class="mb-4">Web Design</h3>
+						<p>I develop dynamic, responsive websites that deliver seamless user experiences. My focus is on crafting functional, visually engaging sites that meet clients' goals across all devices.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-presentation"></span>
+						</span>
+						<h3 class="mb-4">Graphic Design / Illustration </h3>
+						<p>I'm a graphic designer creating impactful, high-quality designs that align with clients' brands and communicate effectively across digital and print media. Showcasing creativity and uniqueness. </p>
+						<p><a href="#section-portfolio" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Featured <strong>Graphics</strong></h2>
+				</div>
+			</div>
+
+
+			<div class="filters-content">
+
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p1.png" alt="">
+							</div>
+							<a href="images/p1.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>Des and Gers</h4>
+							<div class="cat">Logo Design</div>
+						</div>                                         
+					</div>
+
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p2.png" alt="">
+							</div>
+							<a href="images/p2.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4>The Bond Executive</h4>
+							<div class="cat">Logo Design</div>
+						</div>                                         
+					</div>                            
+
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p3.png" alt="">
+							</div>
+							<a href="images/p3.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a> 
+
+						</div>
+						<div class="p-inner">
+							<h4>Character Illustration</h4>
+							<div class="cat">DIGITAL ILLUSTRATION</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p4.png" alt="">
+							</div>
+							<a href="images/p4.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner">
+							<h4>An Earlier Design</h4>
+							<div class="cat">DIGITAL ILLUSTRATION</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all typography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p5.png" alt="">
+							</div>
+							<a href="images/p5.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4>Dexterity</h4>
+							<div class="cat">FLYER DESIGN</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all photography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/p6.png" alt="">
+							</div>
+							<a href="images/p6.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4>Pip Bull Mentorship</h4>
+							<div class="cat">FLYER DESIGN</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- .section -->
+
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="images/image_1.jpg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>
+					<p class="lead">Okay! I've talked about my skills so much already, Time to tell you about myself.</p>
+					<p class="mb-5  ">I'm Destiny Obulor Timothy, Born on the 29th of December 2005, In a popular city in Nigeria, Port-harcourt. And as long as I can remember, I've always been intrested in Technology. Coming from a place where you must adapt and take what you want by force, my love for tech drives me to develop dynamic, and timeless digital products, from websites to graphic designs and many more. When I'm not Coding,  I like listening to music, playing the keyboard, or watching a movie.</p>
+
+					<p>
+						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="site-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>Client <strong>Testimonial</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_3.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_4.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+
+				<div class="col-md-7 mb-5 mb-md-0">
+					<form action="" class="site-form">
+						<h3 class="mb-5">Get In Touch</h3>
+						<div class="form-group">
+							<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
+						</div>
+						<div class="form-group mb-5">
+							<textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary  px-4 py-3">Send Message</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							<a href="mailto:destinytimothy111@gmail.com">destinytimothy111@gmail.com</a>
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							<a href="">+234 701 794 001</a>
+						</li>
+						<li>
+							<span class="text-uppercase">Address</span>
+							Nigeria, Rivers State <br>
+							Port-Harcourt, Woji  <br>
+							Alcon RD, Eke Close.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</div>
+			
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						<a href="https://www.facebook.com/profile.php?id=61555138444292" class="social-item"><span class="icon-facebook2"></span></a>
+						<a href="https://www.instagram.com/destiny.from.earth/" class="social-item"><span class="icon-instagram2"></span></a>
+						<a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
+
+    </body>
+    </html>
