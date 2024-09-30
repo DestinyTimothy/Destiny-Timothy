@@ -72,6 +72,23 @@
 	};
 	
 
+	document.addEventListener("DOMContentLoaded", function () {
+		const cards = document.querySelectorAll('.skill-card');
+		
+		const observer = new IntersectionObserver((entries) => {
+		  entries.forEach(entry => {
+			if (entry.isIntersecting) {
+			  entry.target.classList.add('in-view');
+			} else {
+			  entry.target.classList.remove('in-view');
+			}
+		  });
+		});
+	  
+		cards.forEach(card => {
+		  observer.observe(card);
+		});
+	  });
 
 	/*----------------------------------------
 		Animate Scroll
