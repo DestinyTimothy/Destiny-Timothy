@@ -815,7 +815,11 @@ button {
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
+  
+  .cards {
+    display: block
+  }
   
   .skill-card h1{
       font-size: 17px;
@@ -834,18 +838,23 @@ button {
   }
   
   .cover {
-    width: 80%;
+    width: 90%;
     height: 50%;
     margin: 0 auto;
   }
 
-  
+  #prevbtn {
+    display: none;
+  }
+  #nextbtn {
+    display: none;
+  }
   
   .skill-card {
     background-color: #534f4e;
     border-radius: 30px;
-    padding: 20px 0px;
-    margin: 0px 10px;
+    padding: 20px;
+    margin: 20px 10px;
     position: relative;
     display: flex;
     justify-content: center;
