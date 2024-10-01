@@ -351,3 +351,35 @@
 
 })();
 
+// function scrolll() {
+// 	var left = document.querySelector(".cards");
+// 	left.scrollBy(-250, 0)
+// }
+// function scrollr() {
+// 	var right = document.querySelector(".cards");
+// 	right.scrollBy(250, 0)
+// }
+
+const cards = document.querySelectorAll(".skill-card")
+let currentindex = 0;
+
+document.getElementById("nextbtn").addEventListener("click", () => {
+	currentindex = (currentindex + 1)%
+	cards.length;
+	cards[currentindex].scrollIntoView({
+		behavior: "smooth",
+		block:"nearest",
+		inline:"center"
+	})
+})
+
+
+document.getElementById("prevbtn").addEventListener("click", () => {
+	currentindex = (currentindex - 1 + cards.length)%
+	cards.length;
+	cards[currentindex].scrollIntoView({
+		behavior: "smooth",
+		block:"nearest",
+		inline:"center"
+	})
+})

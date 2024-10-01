@@ -602,10 +602,56 @@ a {
   
 
 
-  .the-skills {
+.the-skills {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    scroll-snap-align: center;
+}
+
+.cover {
+  position: relative;
+  align-items: center;
+  width: 90%;
+  ---
+  height: 50%;
+  margin: 0 auto;
+  scroll-snap-align: center;
+
+}
+
+.cover::before {
+  position: relative;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  background-image: linear-gradient(-90deg, #222222, transparent);
+}
+
+.cover::after {
+  position: relative;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  background-image: linear-gradient(-90deg, #222222, transparent);
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 .skill-card {
@@ -619,7 +665,39 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    scroll-snap-align: center;
 }
+
+.cards::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.fa-circle-chevron-left {
+  color: #888c91;
+  font-size: 30px;
+}
+
+.fa-circle-chevron-right {
+  color: #888c91;
+  font-size: 30px;
+}
+
+.fa-circle-chevron-left:hover {
+  cursor: pointer;
+  color: #4486d6;
+}
+
+.fa-circle-chevron-right:hover {
+  cursor: pointer;
+  color: #4486d6;
+}
+
+
 
 .skill-card h1{
     font-family: "Courier Prime", monospace;
@@ -739,10 +817,7 @@ a {
 
 @media screen and (max-width: 500px){
   
-    .the-skills {
-      display: block;
-  }
-    .skill-card h1{
+  .skill-card h1{
       font-size: 17px;
       margin-bottom: 20px;
   }
@@ -758,11 +833,19 @@ a {
     width: 200px;
   }
   
+  .cover {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  
+  
   .skill-card {
     background-color: #534f4e;
     border-radius: 30px;
     padding: 20px 24px;
-    margin: 30px 50px;
+    margin: 0px 10px;
     position: relative;
     display: flex;
     justify-content: center;
