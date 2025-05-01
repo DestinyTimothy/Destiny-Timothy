@@ -600,242 +600,590 @@ a {
   color: rgba(255, 255, 255, 0.5) !important; }
 
   
+  .fa-github {
+    font-size: 40px;
+    color: #006fd6;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: start;
+      gap: 20px;
+}
+
+
+  /* Basic CSS for core functionality and appearance */
+.project-card {
+    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    overflow: hidden; /* Hide parts that overflow during transition */
+    max-width: 400px; /* Example max width */
+    margin: 2rem auto; /* Center the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md */
+    background-color: #534f4e; /* White background */
+    position: relative;
+}
+
+.project-image-placeholder img {
+    display: block; /* Prevent extra space below image */
+    width: 100%;
+    height: 240px; /* Maintain aspect ratio */
+}
+
+.project-info {
+    padding: 1.5rem; /* Tailwind's p-6 */
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem; /* Tailwind's mb-4 */
+}
+
+.project-name {
+    font-size: 1.25rem; /* Tailwind's text-xl */
+    color: white; /* Dark gray text */
+    font-family: "Montserrat", sans-serif;
+    font-weight:600;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: white; /* Tailwind's gray-600 */
+    transition: transform 0.3s ease-in-out; /* Smooth rotation */
+    padding: 0; /* Remove default button padding */
+}
+
+.project-details {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; /* Smooth expansion */
+}
+
+.project-card.expanded .project-details {
+    max-height: 500px; /* Adjust based on expected content height */
+    /* A value larger than the actual content height is needed for the transition */
+}
+
+.project-card.expanded .dropdown-button {
+    transform: rotate(180deg); /* Rotate arrow when expanded */
+}
+
+
+.view-site-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2563eb; /* Tailwind's blue-600 */
+    color: white;
+    padding: 4px  14px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 1rem; /* Tailwind's mb-4 */
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:600;
+}
+
+.view-site-link:hover {
+    text-decoration: underline;
+}
+
+.link-icon {
+    margin-left: 0.25rem; /* Tailwind's ml-1 */
+    font-size: 0.8rem; /* Adjust icon size */
+}
+
+.project-description {
+    color: white; /* Tailwind's gray-700 */
+    margin-bottom: 1rem; /* Tailwind's mb-4 */
+}
+
+.project-tools h3 {
+    font-size: 1rem; /* Tailwind's text-md */
+    font-weight: 500; /* Tailwind's font-medium */
+    color: rgb(185, 182, 182); /* Dark gray text */
+    margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Tailwind's gap-2 */
+}
+
+.tool-item {
+    background-color: #bfdbfe; /* Tailwind's blue-100 */
+    color: #1d4ed8; /* Tailwind's blue-700 */
+    padding: 0.25rem 0.75rem; /* Tailwind's px-3 py-1 */
+    border-radius: 9999px; /* Tailwind's rounded-full */
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    font-weight: 500; /* Tailwind's font-medium */
+    white-space: nowrap; /* Prevent wrapping within a tool item */
+}
+
+
+.see-more.btn {
+  color: white;
+  padding: 4px 10px;
+  background-color: #006fd6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Tools-i-use {
+  padding: 40px 20px;
+  background-color: #222222;
+  text-align: center;
+}
+
+.tool-icons {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.icon-card {
+  background-color: #534f4e;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  padding: 10px;
+}
+
+.icon-card h2{
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight:600;
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-card img {
+  margin-bottom: 10px;
+}
+
+.icon-card h2 {
+  font-size: 16px;
+  margin: 0;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .tool-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-card {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+
+
+
+
+
 
 
 .the-skills {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    scroll-snap-align: center;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  scroll-snap-align: center;
 }
 
 .cover {
-  position: relative;
-  align-items: center;
-  width: 90%;
-  height: 50%;
-  margin: 0 auto;
-  scroll-snap-align: center;
-
+position: relative;
+align-items: center;
+width: 90%;
+height: 50%;
+margin: 0 auto;
+scroll-snap-align: center;
 }
 
 .cover::before {
-  position: relative;
-  content: "";
-  left: 0;
-  top: 0;
-  z-index: 99;
-  height: 100%;
-  background-image: linear-gradient(-90deg, #222222, transparent);
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 100px;
+height: 100%;
+z-index: 99;
+background-image: linear-gradient(to right, #222222, transparent);
 }
 
 .cover::after {
-  position: relative;
-  content: "";
-  left: 0;
-  top: 0;
-  z-index: 99;
-  height: 100%;
-  background-image: linear-gradient(-90deg, #222222, transparent);
+content: "";
+position: absolute;
+right: 0;
+top: 0;
+width: 100px;
+height: 100%;
+z-index: 99;
+background-image: linear-gradient(to left, #222222, transparent);
 }
 
 .cards {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  overflow: auto;
-  position: relative;
-  scroll-behavior: smooth;
+width: 100%;
+height: auto;
+display: flex;
+justify-content: left;
+align-items: center;
+overflow: auto;
+position: relative;
+scroll-behavior: smooth;
 }
 
 .skill-card {
-    background-color: #534f4e;
-    border-radius: 30px;
-    padding: 20px 24px;
-    margin: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    scroll-snap-align: center;
+  background-color: #534f4e;
+  border-radius: 30px;
+  padding: 20px 24px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: center;
+  width: 300px;
 }
 
 .cards::-webkit-scrollbar{
-  -webkit-appearance: none;
+-webkit-appearance: none;
 }
 
 button {
-  background-color: transparent;
-  border: 2px solid transparent;
+background-color: transparent;
+border: 2px solid transparent;
 }
 
 .fa-circle-chevron-left {
-  color: #888c91;
-  font-size: 30px;
+color: #888c91;
+font-size: 30px;
 }
 
 .fa-circle-chevron-right {
-  color: #888c91;
-  font-size: 30px;
+color: #888c91;
+font-size: 30px;
 }
 
 .fa-circle-chevron-left:hover {
-  cursor: pointer;
-  color: #4486d6;
+cursor: pointer;
+color: #4486d6;
 }
 
 .fa-circle-chevron-right:hover {
-  cursor: pointer;
-  color: #4486d6;
+cursor: pointer;
+color: #4486d6;
 }
 
+.skill-card h1 {
+  font-family: "Courier Prime", monospace;
+  color: #a2cbf1;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
 
+.skill-card h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
 
-.skill-card h1{
-    font-family: "Courier Prime", monospace;
-    color: #a2cbf1;
-    font-size: 20px;
+.skill-card svg {
+  position: relative;
+  width: 200px;
+}
+
+.skill-card svg circle {
+  position: relative;
+  width: 200px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #0051ff;
+  transform: translate(27px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.skill-card .percent1 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent1 svg circle:nth-child(2) {
+  stroke-dashoffset: 44;
+  stroke: #0051ff;
+}
+
+.skill-card .percent2 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent2 svg circle:nth-child(2) {
+  stroke-dashoffset: 220;
+  stroke: #0051ff;
+}
+
+.skill-card .percent3 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent3 svg circle:nth-child(2) {
+  stroke-dashoffset: 100;
+  stroke: #0051ff;
+}
+
+.skill-card .percent4 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent4 svg circle:nth-child(2) {
+  stroke-dashoffset: 180;
+  stroke: #0051ff;
+}
+
+.skill-card .percent5 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent5 svg circle:nth-child(2) {
+  stroke-dashoffset: 320;
+  stroke: #0051ff;
+}
+
+.skill-card .percent6 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent6 svg circle:nth-child(2) {
+  stroke-dashoffset: 320;
+  stroke: #0051ff;
+}
+
+.skill-card .percent7 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #666666;
+}
+.skill-card .percent7 svg circle:nth-child(2) {
+  stroke-dashoffset: 320;
+  stroke: #0051ff;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+.cards {
+  display: block;
+}
+
+.skill-card h1 {
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
-.skill-card h2{
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 18px;
-    font-weight:600;
+.skill-card h2 {
+    font-size: 14px;
+    font-weight: 600;
     margin-top: 10px;
 }
 
-.skill-card svg{
-    position: relative;
-    width: 200px;
+.skill-card svg {
+  position: relative;
+  width: 200px;
 }
 
-.skill-card svg circle{
-    position: relative;
-    width: 200px;
-    fill: none;
-    stroke-width: 10;
-    stroke: #0051ff;
-    transform: translate(27px, 5px);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    stroke-linecap: round;
+.cover {
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
 }
 
-.skill-card .percent1 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
+#prevbtn {
+  display: none;
 }
-.skill-card .percent1 svg circle:nth-child(2){
-    stroke-dashoffset: 44;
-    stroke: #0051ff;
+#nextbtn {
+  display: none;
 }
 
-
-.skill-card .percent2 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
+.skill-card {
+  background-color: #534f4e;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.5s ease;
+  transform: scale(0.8);
+  opacity: 0;
 }
-.skill-card .percent2 svg circle:nth-child(2){
-    stroke-dashoffset: 220;
-    stroke: #0051ff;
-}
 
-
-.skill-card .percent3 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
+.skill-card.in-view {
+  transform: scale(1);
+  opacity: 1;
 }
-.skill-card .percent3 svg circle:nth-child(2){
-    stroke-dashoffset: 100;
-    stroke: #0051ff;
 }
 
 
-.skill-card .percent4 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
-}
-
-.skill-card .percent4 svg circle:nth-child(2){
-    stroke-dashoffset: 180;
-    stroke: #0051ff;
-}
 
 
-.skill-card .percent5 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
-}
-
-.skill-card .percent5 svg circle:nth-child(2){
-    stroke-dashoffset: 320;
-    stroke: #0051ff;
-}
-
-.skill-card .percent6 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
-}
-
-.skill-card .percent6 svg circle:nth-child(2){
-    stroke-dashoffset: 320;
-    stroke: #0051ff;
-}
-
-.skill-card .percent7 svg circle:nth-child(1){
-    stroke-dashoffset: 0;
-    stroke: #666666;
-}
-
-.skill-card .percent7 svg circle:nth-child(2){
-    stroke-dashoffset: 320;
-    stroke: #0051ff;
-}
 
 
-.number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-@media screen and (max-width: 600px){
-  
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
   .cards {
-    display: block
+    display: flex;
+    justify-content: center;  /* Center the cards horizontally */
+    align-items: center;  /* Center the cards vertically if needed */
+    flex-wrap: wrap;  /* Allow the cards to wrap to the next line */
   }
-  
-  .skill-card h1{
+
+  .skill-card h1 {
       font-size: 17px;
       margin-bottom: 20px;
   }
 
-  .skill-card h2{
+  .skill-card h2 {
       font-size: 14px;
-      font-weight:600;
+      font-weight: 600;
       margin-top: 10px;
   }
-  
-  .skill-card svg{
+
+  .skill-card svg {
     position: relative;
     width: 200px;
   }
-  
+
   .cover {
     width: 90%;
     height: 50%;
@@ -848,7 +1196,7 @@ button {
   #nextbtn {
     display: none;
   }
-  
+
   .skill-card {
     background-color: #534f4e;
     border-radius: 30px;
@@ -864,10 +1212,50 @@ button {
     transform: scale(0.8);
     opacity: 0;
   }
-  
+
   .skill-card.in-view {
     transform: scale(1);
     opacity: 1;
   }
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .projects-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+}
+
+
+@media (max-width: 900px) {
+  .projects-cards {
+    display: block;
+}
 }
